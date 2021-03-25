@@ -1,0 +1,59 @@
+﻿
+@{@model LandingPage.Models.Usuario
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_PaginaPrincipal.cshtml";
+}
+
+    <!-- CONTACT -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3>
+                        Contact
+                    </h3>
+                    <p>
+                        Sign up to receive more news from Bandai Namco.
+                    </p>
+                    <form method="post" action="/Home/Create">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-user input-group-text">
+
+                                </i>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Name" name="nombre">
+                            @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-envelope input-group-text">
+
+                                </i>
+                            </div>
+                            <input type="Email" class="form-control" placeholder="Email" name="correo">
+                            @Html.ValidationMessageFor(model => model.Correo, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <i class="fas fa-pencil-alt input-group-text">
+
+                                </i>
+                            </div>
+                            <textarea placeholder="Write Your Message" class="form-control" cols="30" rows="10" name="comentario">
+    							
+    						</textarea>
+                            @Html.ValidationMessageFor(model => model.Comentario, "", new { @class = "text-danger" })
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">
+                            Check In    
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                    <img src="~/Img/logo.png" style="width:100%">   
+                </div>
+            </div>
+        </div>
+    </section>
+

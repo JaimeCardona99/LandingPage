@@ -1,0 +1,336 @@
+﻿@model LandingPage.Models.Usuario
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - Dark Souls III LandingPage</title>
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link href="~/CSS/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="~/Img/logo.png" style="width: 10%" alt="Bandai Namco Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <p id="link">@Html.ActionLink("Registered Users", "ListarTodos")</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HEADER-->
+        <header class="main-header">
+            <div class="background-overlay text-white py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 text-center justify-content-center align-self-center">
+                            <h1>DARK SOULS III</h1>
+                            <p>The last part of the saga that revolutionized the history of videogames.</p>
+                            <a href="#" class="btn btn-outline-secondary btn-lg text-white">
+                                Read More
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="~/Img/product.jpg" alt="Imagen del Producto" class="product img-fluid d-none d-sm-block" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- NEWSLETTER-->
+        <section class="bg-dark text-white py-5">
+        </section>
+
+        <!-- FEATURES-->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-center border-primary">
+                            <div class="card-body">
+                                <h3>
+                                    Feature One
+                                </h3>
+                                <p>
+                                    You have the possibility to choose between different classes of characters.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-primary text-white">
+                            <div class="card-body">
+                                <h3>
+                                    Feature Two
+                                </h3>
+                                <p>
+                                    As you eliminate enemies you get their souls and you get stronger.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center border-primary">
+                            <div class="card-body">
+                                <h3>
+                                    Feature Three
+                                </h3>
+                                <p>
+                                    Its difficulty will test your determination and skill.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-center bg-primary text-white">
+                            <div class="card-body">
+                                <h3>
+                                    Feature Four
+                                </h3>
+                                <p>
+                                    integrate into a world on the edge of the end and be the protagonist of the destiny of this world.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ABOUT-->
+        <section class="bg-light text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="m-5">
+                        <h3>
+                            Why this Product?
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--ACORDEON-->
+        <section class="container text-center p-5">
+            <div class="row">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Question One?
+                                </button>
+                            </h2>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Question Two?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Question Three?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TEAM-->
+        <section class="text-center team">
+            <div class="container p-5">
+                <h1 class="text-center text-white">Team</h1>
+                <p class="text-white">
+                    Adipisicing unde eum odio aliquam dolor ad voluptas expedita consequuntur aperiam inventore eaque. Dolorum facilis aut eum a delectus. Fugit velit quas harum quisquam amet provident inventore. Repudiandae repudiandae delectus.
+                </p>
+                <div class="row">
+                    <!-- USER TEAM -->
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="~/Img/person.png" class="img-fluid rounded-circle w-50">
+                                <h3>John Carter</h3>
+                                <p>
+                                    Dolor modi repudiandae quia beatae consectetur? Nam ullafugit ullam, accusamus! Totam mollitia eveniet!
+                                </p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="~/Img/person.png" class="img-fluid rounded-circle w-50">
+                                <h3>John Carter</h3>
+                                <p>
+                                    Dolor modi repudiandae quia beatae consectetur? Nam ullafugit ullam, accusamus! Totam mollitia eveniet!
+                                </p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="~/Img/person.png" class="img-fluid rounded-circle w-50">
+                                <h3>John Carter</h3>
+                                <p>
+                                    Dolor modi repudiandae quia beatae consectetur? Nam ullafugit ullam, accusamus! Totam mollitia eveniet!
+                                </p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="~/Img/person.png" class="img-fluid rounded-circle w-50">
+                                <h3>John Carter</h3>
+                                <p>
+                                    Dolor modi repudiandae quia beatae consectetur? Nam ullafugit ullam, accusamus! Totam mollitia eveniet!
+                                </p>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                    <div class="p-4">
+                                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        @RenderBody()
+
+            <footer>
+                <div class="container p-3 text-white text-center">
+                    <p>
+                        Copyright &copy; 2021
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- BOOTSTRAP JAVASCRIPT -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

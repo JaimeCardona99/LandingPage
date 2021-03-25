@@ -1,0 +1,10 @@
+﻿body {
+    background: url(../Img/background2.jpg);
+}
+.alert{
+    text-align:center;
+}
+.btn{
+    background: black;
+    color: white;
+}

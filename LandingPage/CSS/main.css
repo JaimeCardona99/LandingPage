@@ -1,0 +1,37 @@
+﻿.navbar, main-header{
+    box-shadow: 2px 2px 5px #000;
+    opacity: .9;
+}
+.navbar .nav-item .nav-link{
+    color: #fff;
+}
+.main-header{
+    background: url(../Img/background.jpg);
+    background-size: cover;
+    min-height: 700px;  
+}
+.product{
+    width: 480px;
+    position: relative;
+    left: 100px;
+}
+/*/.background-overlay{
+    background: rgba(48, 51, 107, .7);
+}*/
+
+.form-control, .btn{
+    border-radius: 0;
+}
+.team{
+    background: #30336b;
+}
+.team, footer {
+    background: #30336B;
+}
+#link{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-size: 64px;
+}

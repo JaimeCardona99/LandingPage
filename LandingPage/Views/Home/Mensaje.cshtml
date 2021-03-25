@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="~/CSS/mensaje.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Mensaje</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-primary" role="alert">
+            <p>Successful registration</p>
+        </div>
+        <div class="form-actions btn btn-default">
+            @Html.ActionLink("Return", "Create")
+        </div>
+    </div>
+</body>
+</html>
